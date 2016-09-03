@@ -1,0 +1,34 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'Lato'
+}
+.clearfix{
+	clear:both;
+}
+ul{
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+body{
+	overflow-x:hidden;
+}
+
+
+
+@mixin transitionRule($timing){
+	-webkit-transition: $timing;
+	-moz-transition: $timing;
+	transition: $timing;
+}
+
+@mixin rotate($angle){
+    -ms-transform: rotate($angle);
+    -webkit-transform: rotate($angle);
+    transform: rotate($angle);
+}
